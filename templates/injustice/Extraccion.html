@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Extracción
+{% endblock %}
+
+{% block content %}
+
+    Puedes extraer S/ 20 de la dotación inicial de tu compañero de grupo. ¿Aceptas?
+
+    {% formfields %}
+
+    {% next_button %}
+
+{% include Constants.instructions %}
+
+{% endblock %}
+
+

@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Aceptar o Rechazar
+{% endblock %}
+
+{% block content %}
+    El jugador A te ha ofrecido {{ group.precio }} por el bien. ¿Aceptarás la oferta propuesta?
+
+    {% formfields %}
+
+    {% next_button %}
+{% include Constants.instructions %}
+{% endblock %}
+
+

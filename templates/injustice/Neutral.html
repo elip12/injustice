@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Neutral
+{% endblock %}
+
+{% block content %}
+
+    ¿Cuál cree que sería un precio justo para la venta de este bien?
+
+    {% formfields %}
+
+    {% next_button %}
+
+{% include Constants.instructions %}
+
+{% endblock %}
+
+

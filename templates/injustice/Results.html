@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Resultados de la Ronda
+{% endblock %}
+
+{% block content %}
+
+    {% if group.precio_aceptado == True %}
+
+    El jugador A comenzó con la dotación {{ player.dotacion_A }} y el jugador B con la dotación {{ player.dotacion_B }}. Se decidió transar y ahora tienes {{ player.payoff }}
+
+    {% else %}
+
+    El jugador A comenzó con la dotación {{ player.dotacion_A }} y el jugador B con la dotación {{ player.dotacion_B }}. No se decidió transar y ahora tienes {{ player.payoff }}
+
+    {% endif %}
+    {% next_button %}
+{% endblock %}
+
+
