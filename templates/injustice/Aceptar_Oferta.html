@@ -8,7 +8,7 @@
 {% block content %}
     El jugador A te ha ofrecido {{ group.precio }} por el bien. ¿Aceptarás la oferta propuesta?
 
-    {% formfields %}
+    {% formfield group.precio_aceptado %}
 
     {% next_button %}
 {% include Constants.instructions %}

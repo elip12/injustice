@@ -1,6 +1,9 @@
+{% extends "global/Page.html" %}
+{% load otree %}
 {% load otree_tags staticfiles %}
 
-<div class="instructions well well-lg"></div>
+{% block content %}
+<div class="instructions well well-lg">
 
     <h3 class="panel-sub-heading">
         Instrucciones <font color="black">
@@ -48,3 +51,5 @@
 
         {% endif %}
     </p>
+</div>
+{% endblock %}
